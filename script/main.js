@@ -255,6 +255,9 @@ const animationTimeline = () => {
       0.1,
       "party"
     )
+    .call(() => {
+      document.getElementById('background-song').play();
+    }, null, "party")
     .from(
       ".wish h5",
       0.5,
